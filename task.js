@@ -15,11 +15,11 @@ newtext.addEventListener("mouseover", function() {
 function image(){
    var y=document.getElementById("change").value;
 if(y=="jordan"){
-     document.getElementById ("im").src="/image/Jordan.jpeg";
+     document.getElementById ("im").src=`"/image/"${value}".jpeg"`;
     
 
 }
-else(     document.getElementById ("im").src="/image/palastine.jpeg");
+else(     document.getElementById ("im").src="valve");
 
 
     }
@@ -90,3 +90,8 @@ function checked2(){
 }
 else{a.style.textDecorationLine="none";}
 }
+
+
+let images=document.images[1];
+images.src=""
+console.log(images.src);
